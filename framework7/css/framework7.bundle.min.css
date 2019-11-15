@@ -8402,7 +8402,7 @@ label.item-radio.active-state:after {
 }
 
 .md .toggle input[type=checkbox]:checked+.toggle-icon {
-    background: var(--f7-toggle-active-color,rgba(var(--f7-theme-color-rgb),.5))
+    background: #0057f7;
 }
 
 .md .toggle input[type=checkbox]:checked+.toggle-icon:after {
