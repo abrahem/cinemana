@@ -1752,7 +1752,7 @@ html.device-full-viewport,html.device-full-viewport body {
 .md .theme-dark,.md.theme-dark {
     --f7-tabbar-link-inactive-color:rgba(255, 255, 255, 0.54)}
 .md .theme-anime,.md.theme-anime {
-    --f7-tabbar-link-inactive-color:rgba(103, 58, 183)} 
+    --f7-tabbar-link-inactive-color:rgb(255, 255, 255)} 
 .toolbar {
     width: 100%;
     position: relative;
@@ -1943,7 +1943,7 @@ html.device-full-viewport,html.device-full-viewport body {
 }
 
 .tabbar .tab-link-active,.tabbar-labels .tab-link-active {
-    color: var(--f7-tabbar-link-active-color,var(--f7-theme-color))
+    color: #ffffff;
 }
 
 .tabbar i.icon,.tabbar-labels i.icon {
