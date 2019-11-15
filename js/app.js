@@ -43,9 +43,6 @@ var app  = new Framework7({
   // App routes
   routes: routes,
 });
-$$('.view').attr('class', 'view view-main view-init');
-$$('.view').addClass('color-theme-white');
-$$('.view').addClass('theme-anime');
 // Init/Create views
 var homeView = app.views.create('#view-home', {
   url: '/'
