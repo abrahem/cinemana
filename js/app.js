@@ -53,12 +53,15 @@ var catalogView = app.views.create('#view-catalog', {
 var settingsView = app.views.create('#view-settings', {
   url: '/settings/'
 });
-
+$$('.view').attr('class', 'view view-main view-init');
+$$('.view').addClass('color-theme-white');
+$$('.view').addClass('theme-anime');
 $$('.toggle input').on('change', function () {
   if (this.checked) {
     $$('.view').addClass('theme-dark');
   } else {
     $$('.view').removeClass('theme-dark');
+    $$('.view').addClass('theme-anime');
   }
 });
 
