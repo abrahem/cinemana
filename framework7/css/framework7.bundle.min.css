@@ -54,7 +54,7 @@
 .md .theme-dark,.md.theme-dark {
     --f7-text-color:rgba(255, 255, 255, 0.87)}
 .md .theme-anime,.md.theme-anime {
-        --f7-text-color:rgba(103, 58, 183)
+     --f7-text-color:rgba(103, 58, 183)
     }
 
 :root {
@@ -62,7 +62,9 @@
 
 .theme-dark {
     --f7-bars-bg-color:#1b1b1b;--f7-bars-text-color:#fff}
-
+.theme-anime {
+        --f7-bars-bg-color:rgba(103, 58, 183);
+        --f7-bars-text-color:#fff}
 .ios {
     --f7-bars-border-color:#c4c4c4}
 
