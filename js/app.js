@@ -55,6 +55,13 @@ var settingsView = app.views.create('#view-settings', {
   url: '/settings/'
 });
 
+$$('.toggle input').on('change', function () {
+  if (this.checked) {
+    $$('.view').addClass('theme-dark');
+  } else {
+    $$('.view').removeClass('theme-dark');
+  }
+});
 
 // Login Screen Demo
 $$('#my-login-screen .login-button').on('click', function () {
