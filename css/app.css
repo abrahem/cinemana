@@ -5,3 +5,155 @@
 .ios .tabbar-labels .tab-link.tab-link-active .icon:not(.icon-ios-fill) {
   display: none;
 }
+/*Vuma - Mobile Template*/
+
+/*profile*/
+.profile .profile-user {
+  text-align: center;
+}
+
+.profile .profile-user .content-image {
+  position: relative;
+  display: inline-block;
+}
+
+.profile .profile-user .content-image img {
+  width: 80px;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.profile .profile-user .content-image .icon-edit {
+  position: absolute;
+  top: 0;
+  right: -10px;
+}
+
+.profile .profile-user .content-image .icon-edit i {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  background: #01c77f;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.profile .profile-user .profile-name {
+  margin-top: 10px;
+}
+
+.profile .profile-user .profile-name h4 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.profile .profile-button {
+  text-align: center;
+}
+
+.profile .profile-button ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.profile .profile-button ul li:last-child .buttons {
+  background: #777;
+}
+
+.profile .profile-info {
+  text-align: center;
+}
+
+.profile .profile-info .content h5 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.profile .profile-content .toolbar {
+  border-radius: 5px;
+  box-shadow: 0 12px 30px -15px rgba(0, 0, 0, 0.2);
+}
+
+.profile .profile-content .content p a {
+  color: #01c77f;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.profile .profile-content .content .email-link {
+  text-decoration: underline;
+}
+
+.profile .profile-content .content-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.popup-map {
+  padding: 0;
+}
+
+.popup-map .map {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.popup-map .popup-close {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+}
+
+.popup-map .popup-close a i {
+  font-size: 18px;
+  color: #fff;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  background: #01c77f;
+  border-radius: 50%;
+}
+
+/*profile edit*/
+.profile-edit .profile-user {
+  text-align: center;
+}
+
+.profile-edit .profile-user .content-image {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-edit .profile-user .content-image img {
+  width: 80px;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.profile-edit .profile-user .content-image form input {
+  display: none;
+}
+
+.profile-edit .profile-user .content-image .icon-upload {
+  position: absolute;
+  top: 0;
+  right: -10px;
+}
+
+.profile-edit .profile-user .content-image .icon-upload i {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  cursor: pointer;
+  background: #01c77f;
+  border-radius: 50%;
+}
