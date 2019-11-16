@@ -8,16 +8,16 @@ routes = [
     url: './pages/about.html',
   },
   {
+    path: '/catalog/',
+    componentUrl: './pages/catalog.html',
+  },
+  {
     path: '/product/:id/',
     componentUrl: './pages/product.html',
   },
   {
     path: '/settings/',
     url: './pages/settings.html',
-  },
-  {
-    path: '/profile/',
-    url: './pages/profile.html',
   },
   // Page Loaders & Router
   {
