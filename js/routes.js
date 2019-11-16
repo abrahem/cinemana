@@ -19,6 +19,10 @@ routes = [
     path: '/settings/',
     url: './pages/settings.html',
   },
+  {
+    path: '/profile/',
+    url: './pages/profile.html',
+  },
   // Page Loaders & Router
   {
     path: '/page-loader-template7/:user/:userId/:posts/:postId/',
