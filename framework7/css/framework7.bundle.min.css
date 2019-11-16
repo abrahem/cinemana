@@ -395,7 +395,7 @@ body {
 }
 
 .theme-dark {
-    color: var(--f7-text-color)
+    color: white;
 }
 
 .framework7-root {
