@@ -61,49 +61,47 @@
             <i class="icon f7-icons ios-only">home</i>
             <i class="icon f7-icons ios-only icon-ios-fill">home_fill</i>
             <i class="icon material-icons md-only">home</i>
-            <span class="tabbar-label">Home</span>
+            <span class="tabbar-label">الرئيسية</span>
           </a>
           <a href="#view-catalog" class="tab-link">
             <i class="icon f7-icons ios-only">list</i>
             <i class="icon f7-icons ios-only icon-ios-fill">list_fill</i>
             <i class="icon material-icons md-only">view_list</i>
-            <span class="tabbar-label">Catalog</span>
+            <span class="tabbar-label">قائمة ألانمي</span>
           </a>
           <a href="#view-settings" class="tab-link">
             <i class="icon f7-icons ios-only">settings</i>
             <i class="icon f7-icons ios-only icon-ios-fill">settings_fill</i>
             <i class="icon material-icons md-only">settings</i>
-            <span class="tabbar-label">Settings</span>
+            <span class="tabbar-label">الملف الشخصي</span>
           </a>
-        <span class="tab-link-highlight" style="width: 33.3333%; transform: translate3d(0%, 0px, 0px);"></span></div>
+        </div>
       </div>
       <!-- Your main view/tab, should have "view-main" class. It also has "tab-active" class -->
       <div id="view-home" class="view view-main tab tab-active">
         <!-- Page, data-name contains page name which can be used in page callbacks -->
-        <div class="page page-current" data-name="home">
+        <div class="page" data-name="home">
           <!-- Top Navbar -->
           <div class="navbar">
             <div class="navbar-inner">
               <div class="left">
                 <a href="#" class="link icon-only panel-open" data-panel="left">
-                  
+                  <i class="icon f7-icons ios-only">menu</i>
                   <i class="icon material-icons md-only">menu</i>
                 </a>
               </div>
-              <div class="title sliding">Home</div>
-              <div class="right">
-                <a href="#" class="link icon-only panel-open" data-panel="right">
-                  
-                  <i class="icon material-icons md-only">menu</i>
-                </a>
-              </div>
+              <div class="title sliding"><h6 style="
+                font-style: normal;
+                font-family: inherit;
+                font-size: 15px;
+            " class="">أحدث الحلقات المضافة</h6></div>
             </div>
           </div>
 
           <!-- Scrollable page content-->
           <div class="page-content">
             <div class="block block-strong">
-              <p class="">This is an example of tabs-layout application. The main point of such tabbed layout is that each tab contains independent view with its own routing and navigation.</p>
+              <p>This is an example of tabs-layout application. The main point of such tabbed layout is that each tab contains independent view with its own routing and navigation.</p>
               <p>Each tab/view may have different layout, different navbar type (dynamic, fixed or static) or without navbar like this tab.</p>
             </div>
 
@@ -144,309 +142,20 @@
               </div>
             </div>
 
-            <div class="block-title searchbar-hide-on-search">Page Loaders &amp; Router</div>
-            <div class="list links-list searchbar-hide-on-search">
-              <ul>
-                <li>
-                  <a href="/page-loader-template7/vladimir/123/about-me/1/?start=0&amp;end=30#top">Template7 Page</a>
-                </li>
-                <li>
-                  <a href="/page-loader-component/vladimir/123/about-me/1/?start=0&amp;end=30#top">Component Page</a>
-                </li>
-                <li>
-                  <a href="/load-something-that-doesnt-exist/">Default Route (404)</a>
-                </li>
-                <li>
-                  <a href="/request-and-load/user/123456/">Request Data &amp; Load</a>
-                </li>
-              </ul>
-            </div>
+            <div class="block-title searchbar-hide-on-search">Page Loaders & Router</div>
           </div>
         </div>
       </div>
-
-      <!-- Catalog View -->
-      <div id="view-catalog" class="view tab">
-        <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
-      <div class="page page-current" data-name="catalog">
-    <div class="navbar">
-      <div class="navbar-inner sliding">
-        <div class="title">Catalog</div>
+     
+        <div id="view-catalog" class="view tab">
+          <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
+        </div>
+  
+        <!-- Settings View -->
+        <div id="view-settings" class="view tab">
+          <!-- Settings page will be loaded here dynamically from /settings/ route -->
+        </div>
       </div>
-    </div>
-    <div class="page-content">
-      <div class="list links-list">
-        <ul>
-          
-            <li><a href="/product/1/">Apple iPhone 8</a></li>
-          
-            <li><a href="/product/2/">Apple iPhone 8 Plus</a></li>
-          
-            <li><a href="/product/3/">Apple iPhone X</a></li>
-          
-        </ul>
-      </div>
-    </div>
-  </div></div>
-
-      <!-- Settings View -->
-      <div id="view-settings" class="view tab">
-        <!-- Settings page will be loaded here dynamically from /settings/ route -->
-      <div class="page page-current" data-name="settings">
-  <div class="navbar">
-    <div class="navbar-inner sliding">
-      <div class="title">Settings</div>
-    </div>
-  </div>
-  <div class="page-content">
-    <div class="block-title">Form Example</div>
-    <div class="list no-hairlines-md">
-      <ul>
-        <li>
-          <div class="item-content item-input">
-            <div class="item-inner">
-              <div class="item-title item-label">Name</div>
-              <div class="item-input-wrap">
-                <input type="text" placeholder="Your name">
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="item-content item-input">
-            <div class="item-inner">
-              <div class="item-title item-label">E-mail</div>
-              <div class="item-input-wrap">
-                <input type="email" placeholder="E-mail">
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="item-content item-input">
-            <div class="item-inner">
-              <div class="item-title item-label">URL</div>
-              <div class="item-input-wrap">
-                <input type="url" placeholder="URL">
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="item-content item-input">
-            <div class="item-inner">
-              <div class="item-title item-label">Password</div>
-              <div class="item-input-wrap">
-                <input type="password" placeholder="Password">
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="item-content item-input">
-            <div class="item-inner">
-              <div class="item-title item-label">Phone</div>
-              <div class="item-input-wrap">
-                <input type="tel" placeholder="Phone">
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="item-content item-input item-input-with-value">
-            <div class="item-inner">
-              <div class="item-title item-label">Gender</div>
-              <div class="item-input-wrap">
-                <select class="input-with-value">
-                  <option>Male</option>
-                  <option>Female</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="item-content item-input item-input-with-value">
-            <div class="item-inner">
-              <div class="item-title item-label">Birth date</div>
-              <div class="item-input-wrap">
-                <input type="date" placeholder="Birth day" value="2014-04-30" class="input-with-value">
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="item-content">
-            <div class="item-inner">
-              <div class="item-title">Toggle</div>
-              <div class="item-after">
-                <label class="toggle toggle-init">
-                  <input type="checkbox">
-                  <span class="toggle-icon"></span>
-                </label>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="item-content item-input">
-            <div class="item-inner">
-              <div class="item-title item-label">Slider</div>
-              <div class="item-input-wrap">
-                <div class="range-slider range-slider-init range-slider-label range-slider-horizontal" data-label="true">
-                  <input type="range" value="50" min="0" max="100" step="1">
-                <div class="range-bar"><div class="range-bar-active" style="width: 50%;"></div></div><div class="range-knob-wrap">
-        <div class="range-knob"></div>
-        <div class="range-knob-label">50</div>
-      </div></div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="align-top">
-          <div class="item-content item-input">
-            <div class="item-inner">
-              <div class="item-title item-label">Textarea</div>
-              <div class="item-input-wrap">
-                <textarea placeholder="Bio"></textarea>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="align-top">
-          <div class="item-content item-input">
-            <div class="item-inner">
-              <div class="item-title item-label">Resizable</div>
-              <div class="item-input-wrap">
-                <textarea placeholder="Bio" class="resizable"></textarea>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="block-title">Buttons</div>
-    <div class="block block-strong">
-      <p class="row">
-        <a href="#" class="col button">Button</a>
-        <a href="#" class="col button button-fill">Fill</a>
-      </p>
-      <p class="row">
-        <a href="#" class="col button button-raised">Raised</a>
-        <a href="#" class="col button button-raised button-fill">Raised Fill</a>
-      </p>
-      <p class="row">
-        <a href="#" class="col button button-round">Round</a>
-        <a href="#" class="col button button-round button-fill">Round Fill</a>
-      </p>
-      <p class="row">
-        <a href="#" class="col button button-outline">Outline</a>
-        <a href="#" class="col button button-round button-outline">Outline Round</a>
-      </p>
-      <p class="row">
-        <a href="#" class="col button button-small button-outline">Small</a>
-        <a href="#" class="col button button-small button-round button-outline">Small Round</a>
-      </p>
-      <p class="row">
-        <a href="#" class="col button button-small button-fill">Small</a>
-        <a href="#" class="col button button-small button-round button-fill">Small Round</a>
-      </p>
-      <p class="row">
-        <a href="#" class="col button button-large button-raised">Large</a>
-        <a href="#" class="col button button-large button-fill button-raised">Large Fill</a>
-      </p>
-
-      <p class="row">
-        <a href="#" class="col button button-large button-fill button-raised color-red">Large Red</a>
-        <a href="#" class="col button button-large button-fill button-raised color-green">Large Green</a>
-      </p>
-
-    </div>
-    <div class="block-title">Checkbox group</div>
-    <div class="list">
-      <ul>
-        <li>
-          <label class="item-checkbox item-content">
-            <input type="checkbox" name="checkbox" value="Books" checked="checked">
-            <i class="icon icon-checkbox"></i>
-            <div class="item-inner">
-              <div class="item-title">Books</div>
-            </div>
-          </label>
-        </li>
-        <li>
-          <label class="item-checkbox item-content">
-            <input type="checkbox" name="checkbox" value="Movies">
-            <i class="icon icon-checkbox"></i>
-            <div class="item-inner">
-              <div class="item-title">Movies</div>
-            </div>
-          </label>
-        </li>
-        <li>
-          <label class="item-checkbox item-content">
-            <input type="checkbox" name="checkbox" value="Food">
-            <i class="icon icon-checkbox"></i>
-            <div class="item-inner">
-              <div class="item-title">Food</div>
-            </div>
-          </label>
-        </li>
-        <li>
-          <label class="item-checkbox item-content">
-            <input type="checkbox" name="checkbox" value="Drinks">
-            <i class="icon icon-checkbox"></i>
-            <div class="item-inner">
-              <div class="item-title">Drinks</div>
-            </div>
-          </label>
-        </li>
-      </ul>
-    </div>
-    <div class="block-title">Radio buttons group</div>
-    <div class="list">
-      <ul>
-        <li>
-          <label class="item-radio item-content">
-            <input type="radio" name="radio" value="Books" checked="checked">
-            <i class="icon icon-radio"></i>
-            <div class="item-inner">
-              <div class="item-title">Books</div>
-            </div>
-          </label>
-        </li>
-        <li>
-          <label class="item-radio item-content">
-            <input type="radio" name="radio" value="Movies">
-            <i class="icon icon-radio"></i>
-            <div class="item-inner">
-              <div class="item-title">Movies</div>
-            </div>
-          </label>
-        </li>
-        <li>
-          <label class="item-radio item-content">
-            <input type="radio" name="radio" value="Food">
-            <i class="icon icon-radio"></i>
-            <div class="item-inner">
-              <div class="item-title">Food</div>
-            </div>
-          </label>
-        </li>
-        <li>
-          <label class="item-radio item-content">
-            <input type="radio" name="radio" value="Drinks">
-            <i class="icon icon-radio"></i>
-            <div class="item-inner">
-              <div class="item-title">Drinks</div>
-            </div>
-          </label>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div></div>
-    </div>
     </div>
 
     <!-- Popup -->
