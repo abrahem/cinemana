@@ -47,6 +47,12 @@ var app  = new Framework7({
 var homeView = app.views.create('#view-home', {
   url: '/'
 });
+var catalogView = app.views.create('#animelist', {
+  url: '/about/'
+});
+var settingsView = app.views.create('#profile', {
+  url: '/profile/'
+});
 $$('.view').attr('class', 'view view-main view-init');
 $$('.view').addClass('color-theme-white');
 $$('.view').addClass('theme-anime');
