@@ -43,6 +43,7 @@ var app  = new Framework7({
   // App routes
   routes: routes,
 });
+
 // Init/Create views
 var homeView = app.views.create('#view-home', {
   url: '/'
@@ -54,23 +55,6 @@ var settingsView = app.views.create('#view-settings', {
   url: '/settings/'
 });
 
-$$('.view').attr('class', 'view view-main view-init');
-$$('.view').addClass('color-theme-white');
-$$('.view').addClass('theme-anime');
-$$('.toolbar-bottom').addClass('theme-anime');
-
-$$('.toggle input').on('change', function () {
-  if (this.checked) {
-    $$('.view').addClass('theme-dark');
-    $$('.toolbar-bottom').addClass('theme-dark');
-  } else {
-    $$('.view').removeClass('theme-dark');
-    $$('.toolbar-bottom').removeClass('theme-dark');
-
-    $$('.view').addClass('theme-anime');
-    $$('.toolbar-bottom').addClass('theme-anime');
-  }
-});
 
 // Login Screen Demo
 $$('#my-login-screen .login-button').on('click', function () {
