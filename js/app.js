@@ -48,10 +48,10 @@ var homeView = app.views.create('#view-home', {
   url: '/'
 });
 var catalogView = app.views.create('#view-catalog', {
-  url: '/settingse/'
+  url: '/catalog/'
 });
 var settingsView = app.views.create('#view-settings', {
-  url: '/profile/'
+  url: '/settings/'
 });
 
 $$('.view').attr('class', 'view view-main view-init');
